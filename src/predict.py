@@ -44,9 +44,7 @@ RAW_FEATURES = [
 def make_predictions(input_data: dict) -> dict:
     df = pd.DataFrame([input_data])
     
-    # Not: Modellerin içinde bu fonksiyonlar otomatik çağrılmıyorsa 
-    # (yani Pipeline kullanmadıysan), burada elinle çağırman gerekebilir:
-    # df = add_exam_features(df) 
+    
     
     exam_score         = exam_model.predict(df)[0]
     burnout_pred       = burnout_model.predict(df)[0]
