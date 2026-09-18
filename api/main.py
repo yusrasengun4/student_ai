@@ -1,7 +1,7 @@
 import sys
 import os
 
-# 🔥 api/ klasöründen çalıştırılınca src/ bulunamıyor — proje kökünü ekle
+
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from fastapi import FastAPI, HTTPException
